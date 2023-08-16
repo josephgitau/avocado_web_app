@@ -1,5 +1,8 @@
-seaborn
-numpy 
 pandas
-sklearn
+numpy
+streamlit
+scikit-learn
+joblib
 matplotlib
+ipython
+Pillow
