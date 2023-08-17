@@ -1,8 +1,6 @@
 # import libraries
 import streamlit as st
 import pandas as pd
-import seaborn as sns
-from IPython import get_ipython
 import matplotlib.pyplot as plt
 
 # Title
@@ -41,24 +39,24 @@ top_regions = data.value_counts('region').head(5)
 
 # plot top 5 regions
 # set darkgrid style
-sns.set_style('darkgrid')
-fig, ax = plt.subplots()
-ax = sns.barplot(x=top_regions.index, y=top_regions.values)
-ax.set_title('Top 5 Regions')
-ax.set_xlabel('Region')
+#sns.set_style('darkgrid')
+#fig, ax = plt.subplots()
+#ax = sns.barplot(x=top_regions.index, y=top_regions.values)
+#ax.set_title('Top 5 Regions')
+#ax.set_xlabel('Region')
 # rotate x-axis labels
-plt.setp(ax.get_xticklabels(), rotation=45)
-ax.set_ylabel('Count')
-st.pyplot(fig)
+#plt.setp(ax.get_xticklabels(), rotation=45)
+#ax.set_ylabel('Count')
+#st.pyplot(fig)
 
 # subheader
-sns.set_style('darkgrid')
-fig1, ax = plt.subplots()
+#sns.set_style('darkgrid')
+#fig1, ax = plt.subplots()
 # change figure size
-fig1.set_size_inches(10, 5)
-ax = sns.histplot(data['Total Volume'], kde=True)
-ax.set_title('Total Volume Distribution')
-st.pyplot(fig1)
+#fig1.set_size_inches(10, 5)
+#ax = sns.histplot(data['Total Volume'], kde=True)
+#ax.set_title('Total Volume Distribution')
+#st.pyplot(fig1)
 
 # Machine Learning part
 st.header('Machine Learning')
