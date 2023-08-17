@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 import seaborn as sns
+from IPython import get_ipython
 import matplotlib.pyplot as plt
 
 # Title
